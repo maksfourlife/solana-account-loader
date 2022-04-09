@@ -2,10 +2,12 @@
 Simple package for loading solana accounts via `getMultipleAccounts` i a more fancy way
 
 Usage:
-`
-const batchSize = 100;
-const pollInterval = 10;
+```typescript
+const batchSize = 100; // number of accounts to pass in a single getMultipleAccounts request
+const pollInterval = 10; // time in ms to store keys in queue before requests
 let loader = new AccountLoader(conn, batchSize, pollInterval);
 
-let infos = await Promise.all(keys.map(async key => loader.load(key)))
-`
+let infos = await Promise.all(
+  keys.map(async key => loader.load(key))
+);
+```
