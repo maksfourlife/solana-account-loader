@@ -1,0 +1,25 @@
+{
+  "name": "solana-account-loader",
+  "version": "1.0.0",
+  "description": "Simple package for loading solana accounts via `getMultipleAccounts` i a more fancy way",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksfourlife/solana-account-loader.git"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "api",
+    "web3"
+  ],
+  "author": "MaksFourLife",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maksfourlife/solana-account-loader/issues"
+  },
+  "homepage": "https://github.com/maksfourlife/solana-account-loader#readme"
+}
