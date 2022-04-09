@@ -25,5 +25,8 @@
   "homepage": "https://github.com/maksfourlife/solana-account-loader#readme",
   "dependencies": {
     "@solana/web3.js": "^1.37.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
   }
 }

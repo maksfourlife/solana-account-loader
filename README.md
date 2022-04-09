@@ -1,5 +1,5 @@
 # solana-account-loader
-Simple package for loading solana accounts via `getMultipleAccounts` i a more fancy way
+Simple package for loading solana accounts via `getMultipleAccounts` in a more fancy way
 
 Usage:
 ```typescript

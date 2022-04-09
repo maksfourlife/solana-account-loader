@@ -12,7 +12,11 @@ export class AccountLoader {
       this.queue = [];
       let futures: Promise<(AccountInfo<Buffer> | null)[]>[] = [];
       for (let i = 0; i < queue.length; i += batchSize) {
-        futures.push(conn.getMultipleAccountsInfo(queue.map(({ key }) => key)));
+        futures.push(
+          conn.getMultipleAccountsInfo(
+            queue.slice(i, i + batchSize).map(({ key }) => key)
+          )
+        );
       }
       Promise.all(futures)
         .then((batches) =>

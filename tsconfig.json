@@ -1,10 +1,13 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "target": "es2021",
+        "target": "es5",
+        "lib": ["es2019", "es7", "es6", "dom"],
         "module": "commonjs",
-        "declaration": true  
+        "declaration": true,
+        "strict": true,
+        "esModuleInterop": true
     },
     "include": ["src"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "dist"]
 }
